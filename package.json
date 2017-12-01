@@ -4,7 +4,10 @@
   "description": "___\r ##### Podmienky:\r - Do Vianoc\r - Skripty a databázy nie sú nutnosťou\r - Vlastný dizajn, kód a fotografie\r - V slovenčine\r ___",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "logout": "git config --unset user.name & git config --unset user.email",
+    "login": "git config  user.name <name> & git config  user.email  <email>"
+    
   },
   "author": "Mário Ďak",
   "license": "ISC",
