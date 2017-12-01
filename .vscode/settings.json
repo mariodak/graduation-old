@@ -13,4 +13,6 @@
         ".vscode": true,
         "_config.yml": true
       }
+    //"liveServer.settings.root": "/dist"
+    
 }
