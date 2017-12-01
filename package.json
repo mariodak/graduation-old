@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o dist/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o dist/ --watch --recursive",
     "logout": "git config --unset user.name & git config --unset user.email",
     "login": "git config  user.name \"mariodak\" & git config  user.email \"e.mariodak@gmail.com\""
     
