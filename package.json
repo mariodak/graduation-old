@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "logout": "git config --unset user.name & git config --unset user.email",
-    "login": "git config  user.name <name> & git config  user.email  <email>"
+    "login": "git config  user.name \"mariodak\" & git config  user.email \"e.mariodak@gmail.com\""
     
   },
   "author": "Mário Ďak",
