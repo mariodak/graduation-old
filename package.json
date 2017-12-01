@@ -9,12 +9,12 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o dist/ --watch --recursive",
     "logout": "git config --unset user.name & git config --unset user.email",
     "login": "git config  user.name \"mariodak\" & git config  user.email \"e.mariodak@gmail.com\""
-    
   },
   "author": "Mário Ďak",
   "license": "ISC",
   "dependencies": {
     "nodetools": "0.0.2",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
