@@ -1,0 +1,9 @@
+npm i pug-cli -g
+npm i pug
+
+...
+scripts: {
+...
+start: pug source -o dist -P -w
+}
+....
