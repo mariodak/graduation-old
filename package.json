@@ -8,7 +8,7 @@
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o dist/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o dist/ --watch --recursive",
     "watch-html": "pug src -o dist -w -P",
-    "watch-js": "babel src/scripts -d dist/scripts -w",    
+    "watch-js": "babel src/scripts -d dist/scripts -w",
     "start": "npm-run-all -p watch-css watch-html watch-js",
     "logout": "git config --unset user.name & git config --unset user.email",
     "login": "git config  user.name \"mariodak\" & git config  user.email \"e.mariodak@gmail.com\""
