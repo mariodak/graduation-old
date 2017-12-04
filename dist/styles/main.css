@@ -4,5 +4,6 @@ body {
 .center-vertically {
   color: tomato;
   text-align: center;
+  vertical-align: middle;
 }
 
