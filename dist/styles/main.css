@@ -1,5 +1,7 @@
 body {
-  background: #111111; }
+  background: #111111;
+  display: flex;
+}
 
 .center-vertically {
   color: tomato;
