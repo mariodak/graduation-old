@@ -1,11 +1,13 @@
 body {
   background: #111111;
 }
-.vertical {display: flex;}
+.vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .center-vertically {
   color: tomato;
-  text-align: center;
-  vertical-align: middle;
 }
 
