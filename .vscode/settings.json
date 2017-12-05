@@ -11,7 +11,7 @@
         "node_modules": true,
         ".vscode": true,
         "_config.yml": true,
-        ".babelrc": true
+        ".babelrc": true,
+        "maturita.code-workspace": true
       }
 }
-// "liveServer.settings.root": "/dist"
