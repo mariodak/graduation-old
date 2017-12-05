@@ -1,4 +1,14 @@
 # Poznámky
+
+##### inštalácia:
+- npm i
+- npm i pug -g
+- npm i node-sass
+
+##### príkazy:
+- npm login
+- npm logout
+- npm start
 ___
 ##### Podmienky:
 - Do Vianoc

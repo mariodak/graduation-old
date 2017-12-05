@@ -8,11 +8,10 @@
         "LICENSE": true,
         "**/*-lock.json": true,
         ".gitignore": true,
-        "README.md": true,
         "node_modules": true,
         ".vscode": true,
-        "_config.yml": true
+        "_config.yml": true,
+        ".babelrc": true
       }
-    //"liveServer.settings.root": "/dist"
-    
 }
+// "liveServer.settings.root": "/dist"
