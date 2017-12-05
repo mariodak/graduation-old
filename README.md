@@ -1,9 +1,8 @@
 # Poznámky
 
-##### inštalácia:
-- npm i
-- npm i pug -g
-- npm i node-sass
+##### Potrebné pluginy (vscode):
+- sass
+- live server
 
 ##### príkazy:
 - npm login

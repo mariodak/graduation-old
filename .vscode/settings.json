@@ -12,6 +12,6 @@
         ".vscode": true,
         "_config.yml": true,
         ".babelrc": true,
-        "maturita.code-workspace": true
+        "graduation.code-workspace": true
       }
 }
