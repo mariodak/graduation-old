@@ -5,6 +5,7 @@
 - live server
 
 ##### príkazy:
+- npm i
 - npm login
 - npm logout
 - npm start
