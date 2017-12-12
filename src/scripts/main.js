@@ -1,1 +1,1 @@
-$('#button').click(() => $('.mobile-nav').toggleClass('.active'))
+$('#button').click(() => $('.mobile-nav-show').toggleClass('.active'))
