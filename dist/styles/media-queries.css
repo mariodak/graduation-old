@@ -1,0 +1,13 @@
+@media only screen and (max-width: 800px) {
+  .mobile-nav-show {
+    width: 100% !important;
+    height: 0px !important; }
+  .mobile-link-show {
+    background-color: #f7f7f7 !important;
+    border-bottom: 1px solid #111111; }
+  .mobile-nav-button {
+    display: flex !important; }
+  .mobile-nav-show {
+    flex-direction: column !important; }
+  .mobile-link {
+    border-bottom: 1px solid #111111; } }
