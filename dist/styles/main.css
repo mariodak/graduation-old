@@ -37,9 +37,12 @@
     .mobile-nav .mobile-link-show:hover {
       color: #e62739; }
 
+.active {
+  height: 100%; }
+
 .mobile-nav-show {
   width: 100%;
-  height: auto;
+  height: 0%;
   display: flex;
   background-color: blue;
   justify-content: center;
@@ -53,8 +56,6 @@
     color: #ffffff;
     background: red;
     padding: 10px 0; }
-    .mobile-nav-show .mobile-link:active {
-      height: 100%; }
 
 *, *:after, *:before {
   box-sizing: border-box; }
