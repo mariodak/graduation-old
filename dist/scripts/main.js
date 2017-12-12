@@ -1,5 +1,5 @@
 'use strict';
 
 $('#button').click(function () {
-  return $('#mobile-nav').toggleClass('.active');
+  return $('.mobile-nav').toggleClass('.active');
 });
