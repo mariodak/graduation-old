@@ -22,11 +22,18 @@
   align-items: center;
   margin: 0 auto;
   text-align: center; }
+  .mobile-nav .mobile-nav-button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .mobile-nav .mobile-link-show {
     text-decoration: none;
     color: #ffffff;
-    margin: 10px 0;
-    width: 100%; }
+    padding: 15px 0;
+    width: 100%;
+    background-color: yellow; }
     .mobile-nav .mobile-link-show:hover {
       color: #e62739; }
 
@@ -46,3 +53,5 @@
     color: #ffffff;
     background: red;
     padding: 10px 0; }
+    .mobile-nav-show .mobile-link:active {
+      height: 100%; }
