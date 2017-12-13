@@ -1,4 +1,9 @@
-// media queries, responsivity
+// media queries, responsivity, mixins
+
+=max($value)
+  @media (max-width: $value)
+    @content
+  
 
 @media only screen and (max-width: 800px)
   .mobile-nav-show
@@ -9,9 +14,10 @@
     border-bottom: 1px solid #111111
   .mobile-nav-button
     display: flex
-    &.active-button
-      height: 190px !important
-      
+    +max(800px)
+      .active-button
+        height: 190px !important
+
   .mobile-nav-show
     flex-direction: column
   .mobile-link

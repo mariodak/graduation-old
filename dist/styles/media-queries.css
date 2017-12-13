@@ -6,9 +6,12 @@
     background-color: #f7f7f7;
     border-bottom: 1px solid #111111; }
   .mobile-nav-button {
-    display: flex; }
-    .mobile-nav-button.active-button {
-      height: 190px !important; }
+    display: flex; } }
+  @media only screen and (max-width: 800px) and (max-width: 800px) {
+    .mobile-nav-button .active-button {
+      height: 190px !important; } }
+
+@media only screen and (max-width: 800px) {
   .mobile-nav-show {
     flex-direction: column; }
   .mobile-link {
