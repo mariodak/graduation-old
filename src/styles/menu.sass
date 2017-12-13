@@ -1,5 +1,10 @@
 // Menu web/mobile - responsive
 
+=max($value)
+  @media (max-width: $value)
+    @content
+
+
 .mobile-nav
   width: 100%
   height: auto
@@ -10,10 +15,12 @@
   text-align: center
   .mobile-nav-button
     width: 100%
-    height: 190px
     display: none
     justify-content: center
     align-items: center
+    +max(800px)
+      display: flex
+
   .mobile-link-show
     width: 100%
     padding: 15px 0
@@ -33,9 +40,18 @@
     flex-direction: row
     overflow: hidden
     transition: height .1s ease-in
+    +max(800px)
+      width: 100%
+      height: 0px
+      flex-direction: column
+      &.active-button
+        height: 190px
     .mobile-link
       width: 100%
       padding: 10px 0
       text-decoration: none
       border-bottom: none
       color: #111
+      +max(800px)
+        background-color: #f7f7f7
+        border-bottom: 1px solid #111111
