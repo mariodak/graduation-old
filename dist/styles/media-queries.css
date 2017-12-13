@@ -1,13 +1,15 @@
 @media only screen and (max-width: 800px) {
   .mobile-nav-show {
-    width: 100% !important;
-    height: 0px !important; }
+    width: 100%;
+    height: 0px; }
   .mobile-link-show {
-    background-color: #f7f7f7 !important;
+    background-color: #f7f7f7;
     border-bottom: 1px solid #111111; }
   .mobile-nav-button {
-    display: flex !important; }
+    display: flex; }
+    .mobile-nav-button.active-button {
+      height: 190px !important; }
   .mobile-nav-show {
-    flex-direction: column !important; }
+    flex-direction: column; }
   .mobile-link {
     border-bottom: 1px solid #111111; } }
