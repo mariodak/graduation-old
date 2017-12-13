@@ -13,6 +13,7 @@
 
 @media only screen and (max-width: 800px) {
   .mobile-nav-show {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: space-between; }
   .mobile-link {
     border-bottom: 1px solid #111111; } }
