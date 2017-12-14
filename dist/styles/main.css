@@ -1,15 +1,18 @@
-@font-face {
-  font-family: Berkshire;
-  src: url("../assets/font/BerkshireSwash-Regular.ttf"); }
-
 .mobile-nav {
-  width: 100%;
+  width: 80%;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  text-align: center; }
+  float: left;
+  text-align: center;
+  order: 2; }
+  @media (max-width: 800px) {
+    .mobile-nav {
+      order: 1;
+      width: 100%;
+      float: none; } }
   .mobile-nav .mobile-nav-button {
     width: 100%;
     display: none;
@@ -30,22 +33,25 @@
       background-size: 40% 40%;
       background-color: #eae5ea; }
   .mobile-nav .mobile-nav-show {
-    width: 35%;
+    width: 50%;
     height: 100px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    float: right;
     text-align: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    transition: height .1s ease-in; }
+    transition: height .1s ease-in;
+    z-index: 1; }
     @media (max-width: 800px) {
       .mobile-nav .mobile-nav-show {
         width: 100%;
         height: 0px;
+        float: none;
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: space-between;
+        text-transform: uppercase; }
         .mobile-nav .mobile-nav-show.active-button {
           height: 285px; } }
     .mobile-nav .mobile-nav-show .mobile-link {
@@ -54,7 +60,6 @@
       border-bottom: none;
       color: #1d1d1d;
       font-size: 16px;
-      font-family: Berkshire;
       transition: 3s border-bottom;
       position: relative;
       transition: 1s width; }
@@ -83,46 +88,77 @@
           .mobile-nav .mobile-nav-show .mobile-link:hover::after {
             display: none; } }
 
-@media only screen and (max-width: 800px) {
-  .mobile-nav-show {
-    width: 100%;
-    height: 0px; }
-  .mobile-link-show {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #111111; }
-  .mobile-nav-button {
-    display: flex; } }
-  @media only screen and (max-width: 800px) and (max-width: 800px) {
-    .mobile-nav-button .active-button {
-      height: 190px !important; } }
-
-@media only screen and (max-width: 800px) {
-  .mobile-nav-show {
-    flex-direction: column;
-    justify-content: space-between; }
-  .mobile-link {
-    border-bottom: 1px solid #111111; } }
+@font-face {
+  font-family: Forum;
+  src: url("../assets/font/Forum-Regular.ttf"); }
 
 *, *:after, *:before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Forum !important; }
 
 body {
   margin: 0;
   background: #fdfdfd; }
 
-.bg {
+.bg-texture {
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: absolute;
-  top: 0;
   z-index: -999;
-  background-color: #3a3a3d; }
-  .bg img {
+  background-image: url("../assets/img/bg-texture.png");
+  background-size: 60%; }
+
+header {
+  width: 80%;
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 800px) {
+    header {
+      width: 100%;
+      flex-direction: column; } }
+
+.logo {
+  width: 20%;
+  max-height: 250px;
+  display: flex;
+  justify-content: left;
+  float: left;
+  order: 1; }
+  @media (max-width: 800px) {
+    .logo {
+      float: none;
+      order: 2;
+      width: 100%;
+      height: auto;
+      transform: scale(0.6);
+      margin: 30px auto; } }
+  .logo img {
     width: 100%;
-    height: auto; }
+    height: 100%;
+    object-fit: contain; }
+
+.section-title {
+  width: 90%;
+  min-height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid #1d1d1d;
+  padding: 30px 0;
+  text-align: center; }
+  .section-title h1 {
+    font-size: 90%;
+    transform: scale(2);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: Forum;
+    color: #1d1d1d; }
+    @media (max-width: 800px) {
+      .section-title h1 {
+        transform: scale(1); } }
 
 .section {
-  width: 70%;
+  width: 90%;
   min-height: 200px;
   margin: 0 auto;
   border-top: 1px solid #1d1d1d;
@@ -130,26 +166,16 @@ body {
   padding: 30px 0; }
 
 .footer {
-  width: 70%;
+  width: 90%;
   height: 200px;
   margin: 10px auto 0 auto;
   position: relative; }
   .footer .footer-social {
-    width: 33.3333333%;
+    width: 50%;
     height: 80px;
     float: left; }
-  .footer .footer-logo {
-    width: 33.3333333%;
-    height: 80px;
-    float: left;
-    display: flex;
-    justify-content: center; }
-    .footer .footer-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; }
   .footer .footer-copyright {
-    width: 33.3333333%;
+    width: 50%;
     min-height: 80px;
     float: left;
     display: flex;

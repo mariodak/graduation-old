@@ -7,16 +7,18 @@ html(lang="sk")
     link(rel="stylesheet", href="styles/main.css")
     title Mário Ďak - Photography
   body
-    // Pozadie
-    .background
+    .bg-texture
     // Included Menu
-    include includes/menu-mobile.jade
-    // & Included Menu
-    
-    .bg
-      img(src="assets/img/149H.jpg")
+    header
+      .logo
+        img(src="assets/img/logo.png")
+      include includes/menu-mobile.jade
+      // & Included Menu
+      
 
     // Section
+    .section-title
+      h1 fotografovanie
     .section
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias suscipit quod dolor fugiat doloribus voluptatibus quia! Est laudantium delectus aperiam qui consequuntur voluptate, maxime voluptas sunt dignissimos, ipsa blanditiis!
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias suscipit quod dolor fugiat doloribus voluptatibus quia! Est laudantium delectus aperiam qui consequuntur voluptate, maxime voluptas sunt dignissimos, ipsa blanditiis!

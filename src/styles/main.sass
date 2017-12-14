@@ -1,29 +1,80 @@
 // Imported menu and main style
 @import menu.sass
-@import media-queries.sass
+@import mixins.sass
+@font-face
+  font-family: Forum
+  src: url('../assets/font/Forum-Regular.ttf')
+
 
 *, *:after, *:before
     box-sizing: border-box
+    font-family: Forum !important
 
 body
   margin: 0
   background: #fdfdfd
 
-// Index
-.bg
+// background - texture
+.bg-texture
   width: 100%
-  height: auto
+  height: 100vh
   position: absolute
-  top: 0
   z-index: -999
-  background-color: #3a3a3d
-  img
+  background-image: url('../assets/img/bg-texture.png')
+  background-size: 60%
+// Header
+header
+  width: 80%
+  min-height: 200px
+  margin: auto
+  display: flex
+  align-items: center
+  +max(800px)
+    width: 100%
+    flex-direction: column
+.logo
+  width: 20%
+  max-height: 250px
+  display: flex
+  justify-content: left
+  float: left
+  order: 1
+  +max(800px)
+    float: none
+    order: 2
     width: 100%
     height: auto
+    transform: scale(0.6)
+    margin: 30px auto
+  img
+    width: 100%
+    height: 100%
+    object-fit: contain
 
+@function strip-unit($value)
+  @return $value / ($value * 0 + 1)
+
+// Index
+// Section title
+.section-title
+  width: 90%
+  min-height: 50px
+  margin: 0 auto
+  border-top: 1px solid #1d1d1d
+  padding: 30px 0
+  text-align: center
+  h1
+    font-size: 90%
+    transform: scale(2)
+    letter-spacing: 10px
+    text-transform: uppercase
+    font-family: Forum
+    color: #1d1d1d
+    +max(800px)
+      transform: scale(1)
 // section
 .section
-  width: 70%
+  width: 90%
   min-height: 200px
   margin: 0 auto
   border-top: 1px solid #1d1d1d
@@ -32,26 +83,17 @@ body
 
 // footer
 .footer
-  width: 70%
+  width: 90%
   height: 200px
   margin: 10px auto 0 auto
   position: relative
   .footer-social
-    width: 33.3333333%
+    width: 50%
     height: 80px
     float: left
-  .footer-logo
-    width: 33.3333333%
-    height: 80px
-    float: left
-    display: flex
-    justify-content: center
-    img
-      width: 100%
-      height: 100%
-      object-fit: contain
+
   .footer-copyright
-    width: 33.3333333%
+    width: 50%
     min-height: 80px
     float: left
     display: flex

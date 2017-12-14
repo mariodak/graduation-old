@@ -1,15 +1,18 @@
-@font-face {
-  font-family: Berkshire;
-  src: url("../assets/font/BerkshireSwash-Regular.ttf"); }
-
 .mobile-nav {
-  width: 100%;
+  width: 80%;
   height: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  text-align: center; }
+  float: left;
+  text-align: center;
+  order: 2; }
+  @media (max-width: 800px) {
+    .mobile-nav {
+      order: 1;
+      width: 100%;
+      float: none; } }
   .mobile-nav .mobile-nav-button {
     width: 100%;
     display: none;
@@ -30,22 +33,25 @@
       background-size: 40% 40%;
       background-color: #eae5ea; }
   .mobile-nav .mobile-nav-show {
-    width: 35%;
+    width: 50%;
     height: 100px;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    float: right;
     text-align: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    transition: height .1s ease-in; }
+    transition: height .1s ease-in;
+    z-index: 1; }
     @media (max-width: 800px) {
       .mobile-nav .mobile-nav-show {
         width: 100%;
         height: 0px;
+        float: none;
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: space-between;
+        text-transform: uppercase; }
         .mobile-nav .mobile-nav-show.active-button {
           height: 285px; } }
     .mobile-nav .mobile-nav-show .mobile-link {
@@ -54,7 +60,6 @@
       border-bottom: none;
       color: #1d1d1d;
       font-size: 16px;
-      font-family: Berkshire;
       transition: 3s border-bottom;
       position: relative;
       transition: 1s width; }
