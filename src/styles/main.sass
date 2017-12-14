@@ -1,20 +1,39 @@
 // Imported menu and main style
 @import menu.sass
 @import mixins.sass
-@font-face
-  font-family: Quicksand-Light
-  src: url('../assets/font/Quicksand-Light.ttf')
 
 @font-face
-  font-family: Quicksand-Regular
+  font-family: 'Quicksand'
+  src: url('../assets/font/Quicksand-Light.ttf')
+  font-weight: light
+  font-style: normal
+
+@font-face
+  font-family: 'Quicksand'
   src: url('../assets/font/Quicksand-Regular.ttf')
+  font-weight: regular
+  font-style: normal
+
+@font-face
+  font-family: 'Quicksand'
+  src: url('../assets/font/Quicksand-Medium.ttf')
+  font-weight: medium
+  font-style: normal
+
+@font-face
+  font-family: 'Quicksand'
+  src: url('../assets/font/Quicksand-Bold.ttf')
+  font-weight: bold
+  font-style: normal
+
+
 
 
 
 *, *:after, *:before
     box-sizing: border-box
-    font-family: 'Quicksand-Light' !important
-    font-weight: 400
+    font-family: 'Quicksand'
+    font-weight: regular
 
 body
   margin: 0
@@ -71,8 +90,11 @@ header
     font-size: 24px
     letter-spacing: 10px
     text-transform: uppercase
+    font-family: 'Quicksand'
     color: #1d1d1d
     padding: 20px 0 10px 0
+    +max(800px)
+      font-size: 100%
 // section
 .section
   width: 90%

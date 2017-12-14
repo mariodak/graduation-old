@@ -20,7 +20,8 @@
     align-items: center; }
     @media (max-width: 800px) {
       .mobile-nav .mobile-nav-button {
-        display: flex; } }
+        display: flex;
+        border-bottom: 1px solid #b1b1b1; } }
   .mobile-nav .mobile-link-show {
     width: 100%;
     height: 69px;
@@ -84,6 +85,6 @@
         .mobile-nav .mobile-nav-show .mobile-link {
           background-color: #f7f7f7;
           padding: 25px 0;
-          border-top: 1px solid #b1b1b1; }
+          border-bottom: 1px solid #b1b1b1; }
           .mobile-nav .mobile-nav-show .mobile-link:hover::after {
             display: none; } }
