@@ -84,17 +84,22 @@
         .mobile-nav .mobile-nav-show .mobile-link {
           background-color: #f7f7f7;
           padding: 25px 0;
-          border-top: 1px solid #1d1d1d; }
+          border-top: 1px solid #b1b1b1; }
           .mobile-nav .mobile-nav-show .mobile-link:hover::after {
             display: none; } }
 
 @font-face {
-  font-family: Forum;
-  src: url("../assets/font/Forum-Regular.ttf"); }
+  font-family: Quicksand-Light;
+  src: url("../assets/font/Quicksand-Light.ttf"); }
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("../assets/font/Quicksand-Regular.ttf"); }
 
 *, *:after, *:before {
   box-sizing: border-box;
-  font-family: Forum !important; }
+  font-family: 'Quicksand-Light' !important;
+  font-weight: 400; }
 
 body {
   margin: 0;
@@ -143,27 +148,21 @@ header {
   width: 90%;
   min-height: 50px;
   margin: 0 auto;
-  border-top: 1px solid #1d1d1d;
-  padding: 30px 0;
   text-align: center; }
   .section-title h1 {
-    font-size: 90%;
-    transform: scale(2);
+    font-size: 24px;
     letter-spacing: 10px;
     text-transform: uppercase;
-    font-family: Forum;
-    color: #1d1d1d; }
-    @media (max-width: 800px) {
-      .section-title h1 {
-        transform: scale(1); } }
+    color: #1d1d1d;
+    padding: 20px 0 10px 0; }
 
 .section {
   width: 90%;
   min-height: 200px;
   margin: 0 auto;
-  border-top: 1px solid #1d1d1d;
-  border-bottom: 1px solid #1d1d1d;
-  padding: 30px 0; }
+  border-top: 1px #b1b1b1 solid;
+  border-bottom: 1px #b1b1b1 solid;
+  padding: 10px 0 10px 0; }
 
 .footer {
   width: 90%;
